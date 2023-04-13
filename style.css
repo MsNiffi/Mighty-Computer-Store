@@ -1,0 +1,91 @@
+/* Setting height of page */
+body, html {
+   height: 100vh;
+}
+
+/* grid layout */
+body{
+   margin: 0;
+   display: grid;
+   grid-template-columns: 30% 30% auto;
+   grid-template-rows: 10% 45% auto;
+
+   grid-template-areas: 
+   "H H H"
+   "B W CL"
+   "I I I";
+}  
+
+/* displaying flex to style header, and styling text and background */
+header{
+   display: flex;
+   grid-area: H;
+   background-color: black;
+   color: white;
+   font-style: italic;
+   justify-content: center;
+}
+
+/* displaying flex to style header, and styling text and background */
+main{
+   display: flex;
+   justify-content: center;
+   grid-area: I;
+   background-color: #ececec;
+}
+
+/* displaying flex to style header, and styling text and background */
+.section1{
+   display: flex;
+   justify-content: center;
+   grid-area: B;
+   background-color: white;
+   
+}
+
+/* displaying flex to style header, and styling text and background */
+.section2{
+   display: flex;
+   justify-content: center;
+   grid-area: W;
+   background-color: white;
+}
+
+/* displaying flex to style header, and styling text and background */
+.section3{
+   display: flex;
+   justify-content: center;
+   grid-area: CL;
+   background-color: #ececec;
+}
+
+/* aditional styling to buttons */
+#bankButton{
+   background-color: chartreuse;
+   color: black;
+}
+#payButton{
+   color: black;
+   background-color: cornflowerblue;
+}
+#loanButton{
+   background-color: yellow;
+   color: black;
+}
+
+#payLoanBack{
+   background-color: #ff3232;
+   color: white;
+}
+
+#yourLoan{
+   color: red;
+}
+#buyButton{
+   height: 50px;
+}
+
+/* aditional styling to card */
+#cLInfo{
+   height: 15rem;
+}
